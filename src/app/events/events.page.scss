@@ -1,0 +1,122 @@
+.event {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.date-item {
+    border: 4px solid #111111;
+    padding: 0.5rem;
+}
+
+.date-item:hover {
+    background-color: var(--primary);
+}
+
+hr.date-line {
+    border-top: 1px solid #111111;
+    width: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.date-number {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.date-month {
+    font-size: 1rem;
+}
+
+.event-content {
+    padding-left: 1rem;
+}
+
+.event-name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.event-time {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.event-address {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: rgba($color: #111111, $alpha: 0.4);
+}
+
+.event-details {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.icon-text {
+    display: flex !important;
+    flex: auto;
+    align-items: center;
+}
+  
+.icon {
+    margin-right: 5px;
+}
+
+@media (min-width: 340px) {
+    .date-item {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .event {
+        padding: 2rem;
+    }
+
+    .date-item {
+        padding: 2rem;
+    }
+    
+    hr.date-line {
+        border-top: 1px solid #111111;
+        width: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .date-number {
+        font-size: 2rem;
+    }
+    
+    .date-month {
+        font-size: 1.25rem;
+    }
+    
+    .event-content {
+        padding-left: 2rem;
+    }
+    
+    .event-name {
+        font-size: 1.75rem;
+    }
+    
+    .event-time {
+        font-size: 1.5rem;
+    }
+    
+    .event-address {
+        font-size: 1.25rem;
+    }
+    
+    .event-details {
+        font-size: 1.5rem;
+    }
+      
+    .icon {
+        margin-right: 0.5rem;
+    }
+}

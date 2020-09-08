@@ -1,8 +1,19 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700');
+
 /** Ionic CSS Variables **/
-:root {
+:root {  
+  /* Set the background of the entire app */
+  --ion-background-color: #f8f8f8;
+
+  /* Set text color of the entire app */
+  --ion-text-color: #111111;
+
+  --ion-font-family: 'Montserrat', sans-serif;
+  font-family: var(--ion-font-family) !important;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -52,7 +63,7 @@
   --ion-color-danger-tint: #f25454;
 
   /** dark **/
-  --ion-color-dark: #222428;
+  --ion-color-dark: #111111;
   --ion-color-dark-rgb: 34, 34, 34;
   --ion-color-dark-contrast: #ffffff;
   --ion-color-dark-contrast-rgb: 255, 255, 255;

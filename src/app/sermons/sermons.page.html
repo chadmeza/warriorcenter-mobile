@@ -1,0 +1,27 @@
+<ion-content class="ion-no-padding">
+  <div class="ion-padding ion-text-center" *ngIf="isLoading">
+    <ion-spinner name="circles" color="dark"></ion-spinner>
+  </div>
+  <div class="ion-padding ion-text-uppercase" *ngIf="!isLoading && sermons.length < 1">
+    Unfortunately, there are no sermons available at the moment.
+  </div>
+  <ion-grid class="ion-no-padding" *ngIf="sermons.length > 0">
+      <ion-row class="sermon" *ngFor="let sermon of sermons">
+        <ion-col size="12" size-sm class="ion-no-padding">
+          <div class="sermon-content">
+            <div class="sermon-title">
+              <h2>{{ sermon.title }}</h2>
+            </div>
+            <div class="sermon-speaker icon-text"><ion-icon name="contact" class="icon"></ion-icon> {{ sermon.speaker }}</div>
+            <div class="sermon-scripture icon-text"><ion-icon name="book" class="icon"></ion-icon> {{ sermon.scripture }}</div>
+            <div class="sermon-date icon-text"><ion-icon name="calendar" class="icon"></ion-icon> {{ formatDate(sermon.date) }}</div>
+          </div>
+          <div class="sermon-player">
+            <audio class="sermon-audio" src="{{ sermon.mp3 }}" controls="controls">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,88 @@
+.sermon {
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.sermon-content {
+    padding: 1rem;
+}
+
+.sermon-title {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: 4px solid #111111;
+}
+
+.sermon-title h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sermon-scripture {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sermon-speaker {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sermon-date {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sermon-player {
+    background-color: rgba(239, 241, 242, 1);
+}
+
+.sermon-audio {
+    width: 100%;
+}
+
+.icon-text {
+    display: flex !important;
+    flex: auto;
+    align-items: center;
+}
+  
+.icon {
+    margin-right: 5px;
+}
+
+@media (min-width: 767px) {
+    .sermon-content {
+        padding: 2rem;
+    }
+    
+    .sermon-title {
+        margin-bottom: 2rem;
+        padding: 4rem;
+    }
+    
+    .sermon-title h2 {
+        font-size: 1.75rem;
+    }
+    
+    .sermon-scripture {
+        font-size: 1.5rem;
+    }
+    
+    .sermon-speaker {
+        font-size: 1.5rem;
+    }
+    
+    .sermon-date {
+        font-size: 1.5rem;
+    }
+      
+    .icon {
+        margin-right: 0.5rem;
+    }
+}
